@@ -66,8 +66,6 @@ export const routes = [
 
       const [task] = database.select('tasks', { id })
 
-      console.log(task)
-
       if (!task) {
         return res.writeHead(400).end()
       }
